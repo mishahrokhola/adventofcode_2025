@@ -2,7 +2,7 @@ import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 import { readFile } from "fs/promises";
 
-import { type Range, parseRange, isIDValid } from "../shared/index.ts";
+import { type Range, parseRange } from "../shared/index.ts";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -37,4 +37,19 @@ export function getRangeInvalidIDsSum(range: Range): number {
   }
 
   return sum;
+}
+
+export function isIDValid(id: number): boolean {
+  const strId = `${id}`;
+  const isEven = strId.length % 2 === 0;
+
+  // if number is not even we can't have reapeat
+  if (!isEven) {
+    return true;
+  }
+
+  const half1 = strId.substring(0, strId.length / 2);
+  const half2 = strId.substring(strId.length / 2, strId.length);
+
+  return half1 !== half2;
 }

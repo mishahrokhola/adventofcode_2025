@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { getInvalidIDsSum } from "./index.ts";
 import { type Range } from "../shared/index.ts";
 
-describe.only("Invalid IDs Sum part 1", () => {
+describe("Invalid IDs Sum part 1", () => {
   it("basic example from adventofcode", () => {
     const ranges: Range[] = [
       "11-22",
