@@ -1,7 +1,8 @@
 import { describe, it, expect } from "vitest";
-import { getZeroCounts, type Rotation } from "./index";
+import { getZeroCounts } from "./index.ts";
+import { type Rotation } from "../shared/index.ts";
 
-describe("getZeroCounts", () => {
+describe("getZeroCounts part 1", () => {
   it("basic example from adventofcode", () => {
     const rotations: Rotation[] = [
       "L68",
