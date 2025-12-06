@@ -12,9 +12,9 @@ const __dirname = dirname(__filename);
  */
 export async function main(): Promise<number> {
   const data = await readFile(resolve(__dirname, "../input.txt"), "utf8");
-  const rotations = data.split(/\r?\n/) as Bank[];
+  const input = data.split(/\r?\n/) as Bank[];
 
-  return getBatteriesSum(rotations);
+  return getBatteriesSum(input);
 }
 
 export function getBatteriesSum(input: Bank[]): number {

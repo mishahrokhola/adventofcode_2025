@@ -12,9 +12,9 @@ const __dirname = dirname(__filename);
  */
 export async function main(): Promise<number> {
   const data = await readFile(resolve(__dirname, "../input.txt"), "utf8");
-  const rotations = data.split(/\r?\n/) as Rotation[];
+  const input = data.split(/\r?\n/) as Rotation[];
 
-  return getZeroCounts(rotations);
+  return getZeroCounts(input);
 }
 
 export function getZeroCounts(input: Rotation[], initial = DIAL_START): number {

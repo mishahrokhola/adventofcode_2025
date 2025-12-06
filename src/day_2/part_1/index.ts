@@ -12,9 +12,9 @@ const __dirname = dirname(__filename);
  */
 export async function main(): Promise<number> {
   const data = await readFile(resolve(__dirname, "../input.txt"), "utf8");
-  const rotations = data.split(",") as Range[];
+  const input = data.split(",") as Range[];
 
-  return getInvalidIDsSum(rotations);
+  return getInvalidIDsSum(input);
 }
 
 export function getInvalidIDsSum(input: Range[]): number {

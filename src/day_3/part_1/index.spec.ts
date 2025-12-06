@@ -4,13 +4,13 @@ import { type Bank } from "../shared/index.ts";
 
 describe("Batteries Sum part 1", () => {
   it("basic example from adventofcode", () => {
-    const ranges: Bank[] = [
+    const banks: Bank[] = [
       "987654321111111",
       "811111111111119",
       "234234234234278",
       "818181911112111",
     ];
 
-    expect(getBatteriesSum(ranges)).toEqual(357);
+    expect(getBatteriesSum(banks)).toEqual(357);
   });
 });
