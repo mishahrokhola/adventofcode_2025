@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 /**
- * @see https://adventofcode.com/2025/day/3
+ * @see https://adventofcode.com/2025/day/3#part2
  */
 export async function main(): Promise<number> {
   const data = await readFile(resolve(__dirname, "../input.txt"), "utf8");
@@ -21,9 +21,8 @@ export function getBatteriesSum(input: Bank[]): number {
   let sum = 0;
 
   for (const range of input) {
-    sum += getBankBatery(range, 2);
+    sum += getBankBatery(range, 12);
   }
 
   return sum;
 }
-

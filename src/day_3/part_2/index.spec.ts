@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { getBatteriesSum } from "./index.ts";
 import { type Bank } from "../shared/index.ts";
 
-describe("Batteries Sum part 1", () => {
+describe("Batteries Sum part 2", () => {
   it("basic example from adventofcode", () => {
     const ranges: Bank[] = [
       "987654321111111",
@@ -11,6 +11,6 @@ describe("Batteries Sum part 1", () => {
       "818181911112111",
     ];
 
-    expect(getBatteriesSum(ranges)).toEqual(357);
+    expect(getBatteriesSum(ranges)).toEqual(3121910778619);
   });
 });
