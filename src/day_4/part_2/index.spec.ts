@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { getAccessiblePapersCount } from "./index.ts";
 
-describe("Accessible paperps count part 1", () => {
+describe.only("Accessible paperps count part 2", () => {
   it("basic example from adventofcode", () => {
     const grid = [
       "..@@.@@@@.",
@@ -16,6 +16,6 @@ describe("Accessible paperps count part 1", () => {
       "@.@.@@@.@.",
     ];
 
-    expect(getAccessiblePapersCount(grid)).toEqual(13);
+    expect(getAccessiblePapersCount(grid)).toEqual(43);
   });
 });
