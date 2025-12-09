@@ -8,7 +8,7 @@ import { solve, parseNumbers } from "./index.ts";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-describe.only("Math problem part 2", () => {
+describe("Math problem part 2", () => {
   it("basic example from adventofcode", async () => {
     const data = await readFile(
       resolve(__dirname, "../input_example.txt"),
@@ -27,8 +27,6 @@ describe.only("Math problem part 2", () => {
     ];
 
     const result = parseNumbers(numbers);
-
-    console.log(result);
 
     expect(result).toEqual([
       ["1", "24", "356"],

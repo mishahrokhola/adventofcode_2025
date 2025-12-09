@@ -14,7 +14,10 @@
 // import { main as solution5_2 } from "./day_5/part_2/index.ts";
 
 // import { main as solution6_1 } from "./day_6/part_1/index.ts";
-import { main as solution6_2 } from "./day_6/part_2/index.ts";
+// import { main as solution6_2 } from "./day_6/part_2/index.ts";
+
+import { main as solution7_1 } from "./day_7/part_1/index.ts";
+// import { main as solution7_2 } from "./day_7/part_2/index.ts";
 
 async function main(): Promise<void> {
   // const result1_1 = await solution1_1();
@@ -46,12 +49,18 @@ async function main(): Promise<void> {
 
   // const result5_2 = await solution5_2();
   // console.log(`SOLUTION 5.2: ${result5_2}`);
-  
+
   // const result6_1 = await solution6_1();
   // console.log(`SOLUTION 6.1: ${result6_1}`);
 
-  const result6_2 = await solution6_2();
-  console.log(`SOLUTION 6.2: ${result6_2}`);
+  // const result6_2 = await solution6_2();
+  // console.log(`SOLUTION 6.2: ${result6_2}`);
+
+  const result7_1 = await solution7_1();
+  console.log(`SOLUTION 7.1: ${result7_1}`);
+
+  // const result7_2 = await solution7_2();
+  // console.log(`SOLUTION 7.2: ${result7_2}`);
 }
 
 main();
